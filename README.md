@@ -1,5 +1,5 @@
 # Schlafüberwachung mit ESP32 & Raspberry Pi 
-## Projektübersich
+## Projektübersicht
 Dieses Projekt beschreibt ein tragbares System zur **Überwachung des Schlafs** mithilfe eines **ESP32**, eines **Pulssensors** und eines **Gyroskops (MPU6050)**. Die Sensordaten werden während des Schlafs erfasst und über das **MQTT-Protokoll** an einen **Raspberry Pi** gesendet, wo sie verarbeitet und visualisiert werden:
 
 Ziel ist es, Puls- und Bewegungsdaten auszuwerten, um Rückschlüsse auf Schlafphasen zu ziehen. 
@@ -68,12 +68,8 @@ Broker aktivieren und starten:
 sudo systemctl enable mosquitto
 sudo systemctl start mosquitto 
 ```
-Optionaler Test:
-```bash
-mosquitto_sub -t test
-mosquitto_pub -t test -m "Hello MQTT"
-```
-Offizielle Dokumentation: https://mosquitto.org/documentation/ 
+Offizielle Dokumentation: https://mosquitto.org/documentation/
+Hilfe bei der Installation von MQTT: https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
 
 ---
 
